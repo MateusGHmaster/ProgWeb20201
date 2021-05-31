@@ -1,0 +1,19 @@
+#tabuleiro {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+#pontos {
+    position: absolute;
+    top: 24%;
+    left: 30%;
+    font-size: 40px;
+    display: none;
+}
+#fim {
+    position: absolute;
+    top: 26%;
+    right: 29%;
+    font-size: 20px;
+    display: none;
+}
