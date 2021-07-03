@@ -1,0 +1,50 @@
+<h1>Adicionar Curso <a href="/curso/" class="btn btn-primary">Voltar</a></h1>
+
+<form action="/curso/create" method="POST">
+
+<div class="form-group">
+    <label for="sigla">Sigla do Curso</label>
+    <input type="text" class="form-control" name="sigla" id="sigla" 
+     placeholder="Informe a sigla do curso">
+    <small class="form-text text-muted">Em caso de dúvidas, consulto o site da UFAM.</small>
+    <div class="invalid-feedback">{{printError errors 'sigla'}}</div>
+</div>
+
+
+<div class="form-group">
+    <label for="nome">Nome do Curso</label>
+    <input type="text" class="form-control" name="nome" id="nome" 
+     placeholder="Informe o nome do curso">
+    <div class="invalid-feedback">{{printError errors 'nome'}}</div>
+</div>
+
+<div class="form-group">
+    <label for="descricao">Descrição do Curso</label>
+    <textarea class="form-control" name="descricao" id="descricao" rows="3"></textarea>
+</div>
+
+<fieldset class="form-group">
+    <legend>Áreas da Ciência</legend>
+    <div class="form-check">
+        <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="area" id="area" value="1" checked>
+            Ciências Exatas. Ex: Computação, Matemática, Estatística, etc. 
+        </label>
+    </div>
+        <div class="form-check">
+        <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="area" id="area" value="2">
+            Ciências Humanas. Ex: Letras, História, Psicologia, etc. 
+        </label>
+    </div>
+    <div class="form-check">
+        <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="area" id="area" value="3">
+            Ciências Biológicas. Ex: Medicina, Odontologia, Agronomia, etc. 
+        </label>   
+    </div> 
+</fieldset>
+
+<button type="submit" class="btn btn-primary">Adicionar Curso</button>
+
+</form>

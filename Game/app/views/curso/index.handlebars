@@ -1,0 +1,34 @@
+  <div class="bs-docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+            <h1 id="tables">Cursos  <a href="/curso/create" class="btn btn-primary">+</a></h1>
+            </div>
+
+            <div class="bs-component">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Sigla</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {{#each cursos}}
+                     <tr>
+                    <td>{{sigla}}</td>
+                    <td>{{nome}}</td>
+                    <td class="options">
+                        <a href="/curso/{{id}}"> <i class="far fa-eye"></i></a>
+                        <a href="/curso/update/{{id}}"> <i class="fas fa-pen"></i></a>
+                        <a href="/curso/remove/{{id}}"> <i class="far fa-trash-alt"></i></a>
+                    </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>

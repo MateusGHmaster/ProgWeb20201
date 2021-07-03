@@ -1,0 +1,16 @@
+
+<div class="card border-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header">{{curso.nome}}
+        <div>
+            <a href="/curso/update/{{curso.id}}"><i class="far fa-edit"></i></a>
+            <a href="/curso/remove/{{curso.id}}"><i class="far fa-trash-alt"></i></a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div><b>Sigla: </b> {{curso.sigla}} </div>  
+        <div><b>Nome: </b> {{curso.nome}}  </div>
+        <div><b>Descrição: </b> {{curso.descricao}}  </div>
+        <div><b>Área: </b> {{curso.Area.nome}}  </div>
+    </div>
+</div>
+
